@@ -1,0 +1,153 @@
+* {
+    margin:unset;
+    padding:unset;
+    font-family:"Rubik";
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li {
+    margin:unset;
+    padding:unset;
+}
+
+ul {
+    list-style-type:none;
+}
+
+#main_contain {
+    height:100vh;
+    width:100%;
+}
+
+.wt_center {
+	/**Start of vertical/horizontal centering**/
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	width:100%;
+	letter-spacing:0.1em;
+}
+
+/**BOTH SIDES**/
+#left_contain, #right_contain {
+    width:50%;
+    height:100vh;
+}
+
+
+/**LEFT SIDE**/
+#left_contain {
+    color:white;
+    background-color:black;
+    position:fixed;
+    background-image:url("../images/ramen_shop.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.white_shroud {
+    background-color:rgba(255,255,255,0.2);
+    height:100%;
+    width:100%
+}
+
+.logo {
+    height:150px;
+    width:150px;
+}
+
+.nav_bar li {
+    margin:35px 0;
+    cursor:pointer;
+}
+
+.social_list {
+    display:flex;
+    justify-content:center;
+}
+
+.social_list li {
+    margin:0 5px;
+}
+
+.temp_sb {
+    width:25px;
+    height:25px;
+    background-color:white;
+}
+/**RIGHT SIDE**/
+#right_contain {
+    margin-left:50%;
+}
+
+.fuyu_store {
+    height:100%;
+    width:100%
+}
+
+.photo_gallery {
+    overflow-y:scroll;
+    position:relative;
+}
+
+.black_shroud {
+    background-color:rgba(0,0,0,0.25);
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.photo_tile {
+    width:50%;
+    padding-top:50%;
+    float:left;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.pt1 {
+    background-image:url("../images/1.jpg");
+}
+.pt2 {
+    background-image:url("../images/2.jpg");
+}
+.pt3 {
+    background-image:url("../images/3.jpg");
+}
+.pt4 {
+    background-image:url("../images/4.jpg");
+}
+.pt5 {
+    background-image:url("../images/5.jpg");
+}
+.pt6 {
+    background-image:url("../images/6.jpg");
+}
+
+/**FOOTER**/
+.hp_address, .hp_phone, .social_list, .copyright {
+    margin-top:10px;
+}
+
+.hp_address {
+    font-size:0.75em;
+}
+
+.hp_phone {
+    font-size:0.75em;
+}
+
+.copyright {
+    font-size:0.6em
+}
+
+/**MISC**/
+::-webkit-scrollbar {
+	display:none;
+}
+
+.hidden {
+    display:none;
+}
