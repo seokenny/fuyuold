@@ -40,11 +40,17 @@ ul {
 /**LEFT SIDE**/
 #left_contain {
     color:white;
-    background-color:black;
     position:fixed;
     background-image:url("../images/ramen_shop.jpeg");
     background-repeat:no-repeat;
     background-size:cover;
+}
+
+#right_contain {
+    background-image:url("../images/whitebgramen.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 .white_shroud {
@@ -126,6 +132,68 @@ ul {
     background-image:url("../images/6.jpg");
 }
 
+/**MENU**/
+.menu_contain {
+    width:80%;
+    z-index:2;
+    margin-left:10%;
+}
+
+.menu_txt {
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:15px;
+    letter-spacing:0.2em;
+}
+
+.left_items, .right_items {
+    width:44.5%;
+    display:inline-block;
+    text-align:center;
+    font-size:0.7em;
+    letter-spacing:0.2em;
+    line-height:20px;
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+
+.right_items {
+    vertical-align:top;
+}
+
+.items_row {
+    width:100%;
+}
+
+.menu_heading {
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    letter-spacing:0.2em;
+}
+
+.lower_heading {
+    text-align:center;
+    font-size:0.7em;
+    font-weight:bold;
+    letter-spacing:0.2em;
+    line-height:20px;
+    margin:15px 0;
+}
+
+.menu_item {
+    font-weight:bold;
+}
+
+.price {
+    font-weight:bold;
+}
+
+.l_item {
+    height:120px;
+}
+
+
 /**FOOTER**/
 .hp_address, .hp_phone, .social_list, .copyright {
     margin-top:10px;
@@ -150,4 +218,19 @@ ul {
 
 .hidden {
     display:none;
+}
+
+.liner {
+    width:100%;
+    height:1px;
+    background-color:black;
+    margin:15px 0;
+}
+
+.vert_liner {
+    height:100%;
+    width:1px;
+    background-color:black;
+    display:inline-block;
+    position:absolute;
 }
