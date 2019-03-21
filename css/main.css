@@ -47,10 +47,7 @@ ul {
 }
 
 #right_contain {
-    background-image:url("../images/whitebgramen.jpg");
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    position:relative;
 }
 
 .white_shroud {
@@ -78,10 +75,14 @@ ul {
     margin:0 5px;
 }
 
+.social_list img {
+    height:100%;
+    width:100%;
+}
+
 .temp_sb {
     width:25px;
     height:25px;
-    background-color:white;
 }
 /**RIGHT SIDE**/
 #right_contain {
@@ -90,7 +91,10 @@ ul {
 
 .fuyu_store {
     height:100%;
-    width:100%
+    width:100%;
+    background-image:url("../images/japwavedim.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 .photo_gallery {
@@ -99,7 +103,7 @@ ul {
 }
 
 .black_shroud {
-    background-color:rgba(0,0,0,0.25);
+    background-color:rgba(0, 0, 0, 0.25);
     height:100%;
     width:100%;
     position:absolute;
@@ -132,6 +136,31 @@ ul {
     background-image:url("../images/6.jpg");
 }
 
+/**ABOUT**/
+.fuyu_storefront {
+    width:40%;
+    margin-left:30%;
+}
+
+.fuyu_storefront img {
+    height:100%;
+    width:100%;
+}
+
+.fuyu_about {
+    width:65%;
+    margin-left:17.5%;
+    text-align:center;
+}
+
+.fuyu_about_title {
+    margin:20px;
+}
+
+.fuyu_para {
+    font-size:0.8em;
+    line-height:20px;
+}
 /**MENU**/
 .menu_contain {
     width:80%;
@@ -190,10 +219,41 @@ ul {
 }
 
 .l_item {
-    height:120px;
+    height:100px;
 }
 
+/**HOURS LOCATION**/
+.hours_location {
+    height:100%;
+    width:100%;
+    background-image:url("../images/japwavedim.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
 
+.hours_section {
+    width:32.75%;
+    display:inline-block;
+    text-align:center;
+    font-size:0.8em;
+}
+
+.fuyu_map {
+    width:325px;
+    height:325px;
+}
+
+.num_loc {
+    margin:20px 0;
+}
+
+.mon_wed {
+    text-align:right;
+}
+
+.sunday {
+    text-align:left;
+}
 /**FOOTER**/
 .hp_address, .hp_phone, .social_list, .copyright {
     margin-top:10px;
@@ -233,4 +293,8 @@ ul {
     background-color:black;
     display:inline-block;
     position:absolute;
+}
+
+.bold {
+    font-weight:bold;
 }
