@@ -64,6 +64,10 @@ ul {
 .nav_bar li {
     margin:35px 0;
     cursor:pointer;
+    letter-spacing:0.3em;
+    font-size:0.85em;
+    font-family:"Roboto";
+    font-weight:bold;
 }
 
 .social_list {
@@ -87,6 +91,13 @@ ul {
 /**RIGHT SIDE**/
 #right_contain {
     margin-left:50%;
+}
+
+.fuyu_name {
+    font-family:"Roboto";
+    font-weight:bold;
+    font-size:1.25em;
+    letter-spacing:0.2em;
 }
 
 .fuyu_store {
@@ -147,6 +158,16 @@ ul {
     width:100%;
 }
 
+.fuyu_photo {
+    padding:15px;
+    border:5px solid rgb(26, 26, 26);
+}
+
+.f_a_padding {
+    padding-top:10%;;
+    padding-bottom:10%;
+}
+
 .fuyu_about {
     width:65%;
     margin-left:17.5%;
@@ -154,18 +175,34 @@ ul {
 }
 
 .fuyu_about_title {
-    margin:20px;
+    margin-bottom:20px;
 }
 
 .fuyu_para {
     font-size:0.8em;
     line-height:20px;
+    margin:10px 0;
+}
+
+.box-half-bottom {
+    border-bottom:10px solid black;
+    border-top:unset;
+}
+
+.half_box {
+    
 }
 /**MENU**/
 .menu_contain {
     width:80%;
     z-index:2;
     margin-left:10%;
+    background-image:url("../images/japwavedim.jpg");
+    background-size:cover;
+    height:100vh;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    overflow-y:scroll;
 }
 
 .menu_txt {
@@ -212,6 +249,7 @@ ul {
 
 .menu_item {
     font-weight:bold;
+    font-size:1.2em;
 }
 
 .price {
@@ -244,7 +282,11 @@ ul {
 }
 
 .num_loc {
-    margin:20px 0;
+    margin:30px 0;
+    font-size:0.85em;
+    letter-spacing:0.2em;
+    line-height:20px;
+    font-weight:bold;
 }
 
 .mon_wed {
@@ -254,6 +296,25 @@ ul {
 .sunday {
     text-align:left;
 }
+
+.hl_pic {
+    width:100%;
+    height:100%;
+}
+
+.open_days {
+    margin-bottom:10px;
+}
+
+.map_google {
+    width:100%;
+    height:350px;
+}
+
+.open_hrs {
+    line-height:2em;
+}
+
 /**FOOTER**/
 .hp_address, .hp_phone, .social_list, .copyright {
     margin-top:10px;
@@ -297,4 +358,10 @@ ul {
 
 .bold {
     font-weight:bold;
+}
+
+.dark_shroud {
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.9);
 }

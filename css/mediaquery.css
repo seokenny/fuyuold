@@ -1,0 +1,70 @@
+@media only screen and (max-width:1263px){
+    .hours_section {
+        width:30%;
+    }
+}
+
+@media only screen and (min-width:769px){
+    #mobile_full {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #main_contain {
+        display:none;
+    }
+    /**TABLET QUERY**/
+    #tablet_contain {
+        width:100%;
+        height:100vh;
+        background-image:url("../images/ramen_shop.jpeg");
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    .nav_bar {
+        display:none;
+    }
+    .hp-content_contain {
+        color:white;
+    }
+
+    .mobile_burger_bar {
+        position:fixed;
+        z-index:80000;
+        width:100%;
+        text-align:right;
+    }
+
+    .burger_button {
+        cursor:pointer;
+    }
+
+    .mobile_burger_bar img {
+        width:30px;
+        height:30px;
+        margin:10px 20px 0 0;
+    }
+
+    .mobile_nav {
+        height:100vh;
+        width:100%;
+        background-color:black;
+        position:fixed;
+        z-index:90000;
+    }
+
+    .m_nav_bar {
+        color:white;
+        cursor:pointer;
+        font-size:2em;
+        font-family:"Roboto";
+        font-weight:bold;
+    }
+    .fuyu_store {
+        height:100vh;
+    }
+    .hours_location {
+        height:100vh;
+    }
+}

@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $(".photo_gallery").addClass("active");
+	$(".photo_gallery").addClass("active");
+	$("#tablet_contain").addClass("active");
     
 	$(".nav_home").on("click",function(){
 		if($(".fuyu_store").hasClass("active")){
@@ -113,5 +114,133 @@ $(document).ready(function(){
         $("#left_contain").stop().animate({width:"25%"},500);
         $("#right_contain").stop().animate({width:"75%"},500);
         $("#right_contain").stop().animate({marginLeft:"25%",width:"75%"},500);
-    });
+	});
+
+	
+/**TABLET */
+
+	$(".burger_button").on("click",function(){
+		$(".mobile_nav").stop().slideDown();
+	});
+
+	$(".close_button").on("click",function(){
+		$(".mobile_nav").stop().slideUp();
+	});
+
+	$(".m_nav_home").on("click",function(){
+		$(".mobile_nav").stop().slideUp();
+		$(".black_button").stop().fadeOut();
+	});
+
+	$(".m_nav_about").on("click",function(){
+		$(".mobile_nav").stop().slideUp();
+		$(".black_button").stop().fadeIn();
+	});
+
+	$(".m_nav_hours").on("click",function(){
+		$(".mobile_nav").stop().slideUp();
+		$(".black_button").stop().fadeIn();
+	});
+
+	$(".m_nav_menu").on("click",function(){
+		$(".mobile_nav").stop().slideUp();
+		$(".black_button").stop().fadeIn();
+	});
+
+	$(".m_nav_home").on("click",function(){
+		if($(".m_fuyu_store").hasClass("active")){
+			$(".m_fuyu_store").stop().fadeOut("fast",function(){
+				$("#tablet_contain").fadeIn("fast");
+			});
+			$(".m_fuyu_store").removeClass("active");
+			$("#tablet_contain").addClass("active");
+		}
+		else if($(".m_menu_contain").hasClass("active")){
+			$(".m_menu_contain").stop().fadeOut("fast",function(){
+				$("#tablet_contain").fadeIn("fast");		
+			});
+			$(".m_menu_contain").removeClass("active");
+			$("#tablet_contain").addClass("active");
+		}
+		else if($(".m_hours_location").hasClass("active")){
+			$(".m_hours_location").stop().fadeOut("fast",function(){
+				$("#tablet_contain").fadeIn("fast");		
+			});
+			$(".m_hours_location").removeClass("active");
+			$("#tablet_contain").addClass("active");
+		}
+	});
+	
+	$(".m_nav_about").on("click",function(){
+		if($("#tablet_contain").hasClass("active")){
+			$("#tablet_contain").stop().fadeOut("fast",function(){
+				$(".m_fuyu_store").fadeIn("fast");
+			});
+			$("#tablet_contain").removeClass("active");
+			$(".m_fuyu_store").addClass("active");
+		}
+		else if($(".m_menu_contain").hasClass("active")){
+			$(".m_menu_contain").stop().fadeOut("fast",function(){
+				$(".m_fuyu_store").fadeIn("fast");		
+			});
+			$(".m_menu_contain").removeClass("active");
+			$(".m_fuyu_store").addClass("active");
+		}
+		else if($(".m_hours_location").hasClass("active")){
+			$(".m_hours_location").stop().fadeOut("fast",function(){
+				$(".m_fuyu_store").fadeIn("fast");		
+			});
+			$(".m_hours_location").removeClass("active");
+			$(".m_fuyu_store").addClass("active");
+		}
+	});
+	
+	$(".m_nav_menu").on("click",function(){
+		if($("#tablet_contain").hasClass("active")){
+			$("#tablet_contain").stop().fadeOut("fast",function(){
+				$(".m_menu_contain").fadeIn("fast");
+			});
+			$("#tablet_contain").removeClass("active");
+			$(".m_menu_contain").addClass("active");
+		}
+		else if($(".m_fuyu_store").hasClass("active")){
+			$(".m_fuyu_store").stop().fadeOut("fast",function(){
+				$(".m_menu_contain").fadeIn("fast");		
+			});
+			$(".m_fuyu_store").removeClass("active");
+			$(".m_menu_contain").addClass("active");
+		}
+		else if($(".m_hours_location").hasClass("active")){
+			$(".m_hours_location").stop().fadeOut("fast",function(){
+				$(".m_menu_contain").fadeIn("fast");		
+			});
+			$(".m_hours_location").removeClass("active");
+			$(".m_menu_contain").addClass("active");
+		}
+	});
+
+	$(".m_nav_hours").on("click",function(){
+		if($("#tablet_contain").hasClass("active")){
+			$("#tablet_contain").stop().fadeOut("fast",function(){
+				$(".m_hours_location").fadeIn("fast");
+			});
+			$("#tablet_contain").removeClass("active");
+			$(".m_hours_location").addClass("active");
+		}
+		else if($(".m_fuyu_store").hasClass("active")){
+			$(".m_fuyu_store").stop().fadeOut("fast",function(){
+				$(".m_hours_location").fadeIn("fast");		
+			});
+			$(".m_fuyu_store").removeClass("active");
+			$(".m_hours_location").addClass("active");
+		}
+		else if($(".m_menu_contain").hasClass("active")){
+			$(".m_menu_contain").stop().fadeOut("fast",function(){
+				$(".m_hours_location").fadeIn("fast");		
+			});
+			$(".m_menu_contain").removeClass("active");
+			$(".m_hours_location").addClass("active");
+		}
+	});
+
 });
