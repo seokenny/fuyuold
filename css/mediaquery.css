@@ -1,3 +1,9 @@
+@media only screen and (max-width:1297px){
+    .l_item {
+        width:49%;
+    }
+}
+
 @media only screen and (max-width:1263px){
     .hours_section {
         width:30%;
@@ -8,63 +14,60 @@
     #mobile_full {
         display:none;
     }
+    #main_contain {
+        display:block;
+    }
 }
 
 @media only screen and (max-width:768px){
     #main_contain {
         display:none;
     }
-    /**TABLET QUERY**/
-    #tablet_contain {
-        width:100%;
-        height:100vh;
-        background-image:url("../images/ramen_shop.jpeg");
-        background-size:cover;
-        background-repeat:no-repeat;
+    #mobile_full {
+        display:block;
     }
+    /**TABLET QUERY**/
     .nav_bar {
         display:none;
     }
-    .hp-content_contain {
-        color:white;
-    }
-
-    .mobile_burger_bar {
-        position:fixed;
-        z-index:80000;
-        width:100%;
-        text-align:right;
-    }
-
-    .burger_button {
-        cursor:pointer;
-    }
-
-    .mobile_burger_bar img {
-        width:30px;
-        height:30px;
-        margin:10px 20px 0 0;
-    }
-
-    .mobile_nav {
-        height:100vh;
-        width:100%;
-        background-color:black;
-        position:fixed;
-        z-index:90000;
-    }
-
-    .m_nav_bar {
-        color:white;
-        cursor:pointer;
-        font-size:2em;
-        font-family:"Roboto";
-        font-weight:bold;
-    }
+    
     .fuyu_store {
         height:100vh;
     }
     .hours_location {
         height:100vh;
+    }
+}
+
+@media only screen and (max-width:548px){
+    .left_items, .right_items {
+        width:100%;
+        margin-left:unset;
+        margin-right:unset;
+    }
+    .fuyu_about {
+        width:80%;
+        margin-left:10%;
+    }
+}
+
+@media only screen and (max-width:475px){
+    .half_box {
+        width:50%;
+    }
+    .fuyu_para {
+        font-size:0.7em;
+    }
+    .num_loc {
+        font-size:0.75em;
+    }
+    .open_days {
+        margin-bottom:unset;
+    }
+    .open_hrs {
+        line-height:unset;
+    }
+    .hours_section {
+        font-size:0.7em;
     }
 }

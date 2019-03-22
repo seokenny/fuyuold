@@ -7,26 +7,35 @@ $(document).ready(function(){
 		if($(".fuyu_store").hasClass("active")){
 			$(".fuyu_store").stop().fadeOut("fast",function(){
 				$(".photo_gallery").fadeIn("fast");
+				$("#tablet_contain").fadeIn("fast");
 			});
 			$(".fuyu_store").removeClass("active");
+			$(".m_fuyu_store").removeClass("active");
 			$(".photo_gallery").addClass("active");
+			$("#tablet_contain").addClass("active");
         }
 		else if($(".menu_contain").hasClass("active")){
             $("#left_contain").stop().animate({width:"50%"},500);
             $("#right_contain").stop().animate({width:"50%"},500);
             $("#right_contain").stop().animate({marginLeft:"50%",width:"50%"},500);
 			$(".menu_contain").stop().fadeOut("fast",function(){
-				$(".photo_gallery").fadeIn("fast");		
+				$(".photo_gallery").fadeIn("fast");
+				$("#tablet_contain").fadeIn("fast");	
 			});
 			$(".menu_contain").removeClass("active");
+			$(".m_menu_contain").removeClass("active");
 			$(".photo_gallery").addClass("active");
+			$("#tablet_contain").addClass("active");
 		}
 		else if($(".hours_location").hasClass("active")){
 			$(".hours_location").stop().fadeOut("fast",function(){
-				$(".photo_gallery").fadeIn("fast");		
+				$(".photo_gallery").fadeIn("fast");
+				$("#tablet_contain").fadeIn("fast");	
 			});
 			$(".hours_location").removeClass("active");
+			$(".m_hours_location").removeClass("active");
 			$(".photo_gallery").addClass("active");
+			$("#tablet_contain").addClass("active");
 		}
     });
 
@@ -34,26 +43,35 @@ $(document).ready(function(){
 		if($(".photo_gallery").hasClass("active")){
 			$(".photo_gallery").stop().fadeOut("fast",function(){
 				$(".fuyu_store").fadeIn("fast");
+				$(".m_fuyu_store").fadeIn("fast");
 			});
 			$(".photo_gallery").removeClass("active");
+			$("#tablet_contain").removeClass("active");
 			$(".fuyu_store").addClass("active");
+			$(".m_fuyu_store").addClass("active");
 		}
 		else if($(".menu_contain").hasClass("active")){
             $("#left_contain").stop().animate({width:"50%"},500);
             $("#right_contain").stop().animate({width:"50%"},500);
             $("#right_contain").stop().animate({marginLeft:"50%",width:"50%"},500);
 			$(".menu_contain").stop().fadeOut("fast",function(){
-				$(".fuyu_store").fadeIn("fast");		
+				$(".fuyu_store").fadeIn("fast");
+				$(".m_fuyu_store").fadeIn("fast");	
 			});
 			$(".menu_contain").removeClass("active");
+			$(".m_menu_contain").removeClass("active");
 			$(".fuyu_store").addClass("active");
+			$(".m_fuyu_store").addClass("active");
 		}
 		else if($(".hours_location").hasClass("active")){
 			$(".hours_location").stop().fadeOut("fast",function(){
-				$(".fuyu_store").fadeIn("fast");		
+				$(".fuyu_store").fadeIn("fast");
+				$(".m_fuyu_store").fadeIn("fast");	
 			});
 			$(".hours_location").removeClass("active");
+			$(".m_hours_location").removeClass("active");
 			$(".fuyu_store").addClass("active");
+			$(".m_fuyu_store").addClass("active");
 		}
     });
 
@@ -61,23 +79,32 @@ $(document).ready(function(){
 		if($(".fuyu_store").hasClass("active")){
 			$(".fuyu_store").stop().fadeOut("fast",function(){
 				$(".menu_contain").fadeIn("fast");
+				$(".m_menu_contain").fadeIn("fast");
 			});
 			$(".fuyu_store").removeClass("active");
+			$(".m_fuyu_store").removeClass("active");
 			$(".menu_contain").addClass("active");
+			$(".m_menu_contain").addClass("active");
 		}
 		else if($(".photo_gallery").hasClass("active")){
 			$(".photo_gallery").stop().fadeOut("fast",function(){
-				$(".menu_contain").fadeIn("fast");		
+				$(".menu_contain").fadeIn("fast");
+				$(".m_menu_contain").fadeIn("fast");
 			});
 			$(".photo_gallery").removeClass("active");
+			$("#tablet_contain").removeClass("active");
 			$(".menu_contain").addClass("active");
+			$(".m_menu_contain").addClass("active");
 		}
 		else if($(".hours_location").hasClass("active")){
 			$(".hours_location").stop().fadeOut("fast",function(){
-				$(".menu_contain").fadeIn("fast");		
+				$(".menu_contain").fadeIn("fast");
+				$(".m_menu_contain").fadeIn("fast");
 			});
 			$(".hours_location").removeClass("active");
+			$(".m_hours_location").removeClass("active");
 			$(".menu_contain").addClass("active");
+			$(".m_menu_contain").addClass("active");
 		}
 	});
 	
@@ -85,26 +112,35 @@ $(document).ready(function(){
 		if($(".fuyu_store").hasClass("active")){
 			$(".fuyu_store").stop().fadeOut("fast",function(){
 				$(".hours_location").fadeIn("fast");
+				$(".m_hours_location").fadeIn("fast");
 			});
 			$(".fuyu_store").removeClass("active");
+			$(".m_fuyu_store").removeClass("active");
 			$(".hours_location").addClass("active");
+			$(".m_hours_location").addClass("active");
 		}
 		else if($(".photo_gallery").hasClass("active")){
 			$(".photo_gallery").stop().fadeOut("fast",function(){
-				$(".hours_location").fadeIn("fast");		
+				$(".hours_location").fadeIn("fast");
+				$(".m_hours_location").fadeIn("fast");	
 			});
 			$(".photo_gallery").removeClass("active");
+			$("#tablet_contain").removeClass("active");
 			$(".hours_location").addClass("active");
+			$(".m_hours_location").addClass("active");
 		}
 		else if($(".menu_contain").hasClass("active")){
             $("#left_contain").stop().animate({width:"50%"},500);
             $("#right_contain").stop().animate({width:"50%"},500);
             $("#right_contain").stop().animate({marginLeft:"50%",width:"50%"},500);
 			$(".menu_contain").stop().fadeOut("fast",function(){
-				$(".hours_location").fadeIn("fast");		
+				$(".hours_location").fadeIn("fast");
+				$(".m_hours_location").fadeIn("fast");		
 			});
 			$(".menu_contain").removeClass("active");
+			$(".m_menu_contain").removeClass("active");
 			$(".hours_location").addClass("active");
+			$(".m_hours_location").addClass("active");
 		}
 
     });
@@ -151,23 +187,32 @@ $(document).ready(function(){
 		if($(".m_fuyu_store").hasClass("active")){
 			$(".m_fuyu_store").stop().fadeOut("fast",function(){
 				$("#tablet_contain").fadeIn("fast");
+				$(".photo_gallery").fadeIn("fast");
 			});
 			$(".m_fuyu_store").removeClass("active");
+			$(".fuyu_store").removeClass("active");
 			$("#tablet_contain").addClass("active");
+			$(".photo_gallery").addClass("active");
 		}
 		else if($(".m_menu_contain").hasClass("active")){
 			$(".m_menu_contain").stop().fadeOut("fast",function(){
-				$("#tablet_contain").fadeIn("fast");		
+				$("#tablet_contain").fadeIn("fast");
+				$(".photo_gallery").fadeIn("fast");	
 			});
 			$(".m_menu_contain").removeClass("active");
+			$(".menu_contain").removeClass("active");
 			$("#tablet_contain").addClass("active");
+			$(".photo_gallery").addClass("active");
 		}
 		else if($(".m_hours_location").hasClass("active")){
 			$(".m_hours_location").stop().fadeOut("fast",function(){
-				$("#tablet_contain").fadeIn("fast");		
+				$("#tablet_contain").fadeIn("fast");
+				$(".photo_gallery").fadeIn("fast");		
 			});
 			$(".m_hours_location").removeClass("active");
+			$(".hours_location").removeClass("active");
 			$("#tablet_contain").addClass("active");
+			$(".photo_gallery").addClass("active");
 		}
 	});
 	
@@ -175,23 +220,32 @@ $(document).ready(function(){
 		if($("#tablet_contain").hasClass("active")){
 			$("#tablet_contain").stop().fadeOut("fast",function(){
 				$(".m_fuyu_store").fadeIn("fast");
+				$(".fuyu_store").fadeIn("fast");
 			});
 			$("#tablet_contain").removeClass("active");
+			$(".photo_gallery").removeClass("active");
 			$(".m_fuyu_store").addClass("active");
+			$(".fuyu_store").addClass("active");
 		}
 		else if($(".m_menu_contain").hasClass("active")){
 			$(".m_menu_contain").stop().fadeOut("fast",function(){
-				$(".m_fuyu_store").fadeIn("fast");		
+				$(".m_fuyu_store").fadeIn("fast");
+				$(".fuyu_store").fadeIn("fast");	
 			});
 			$(".m_menu_contain").removeClass("active");
+			$(".menu_contain").removeClass("active");
 			$(".m_fuyu_store").addClass("active");
+			$(".fuyu_store").addClass("active");
 		}
 		else if($(".m_hours_location").hasClass("active")){
 			$(".m_hours_location").stop().fadeOut("fast",function(){
-				$(".m_fuyu_store").fadeIn("fast");		
+				$(".m_fuyu_store").fadeIn("fast");
+				$(".fuyu_store").fadeIn("fast");
 			});
 			$(".m_hours_location").removeClass("active");
+			$(".hours_location").removeClass("active");
 			$(".m_fuyu_store").addClass("active");
+			$(".fuyu_store").addClass("active");
 		}
 	});
 	
@@ -199,23 +253,32 @@ $(document).ready(function(){
 		if($("#tablet_contain").hasClass("active")){
 			$("#tablet_contain").stop().fadeOut("fast",function(){
 				$(".m_menu_contain").fadeIn("fast");
+				$(".menu_contain").fadeIn("fast");
 			});
 			$("#tablet_contain").removeClass("active");
+			$(".photo_gallery").removeClass("active");
 			$(".m_menu_contain").addClass("active");
+			$(".menu_contain").addClass("active");
 		}
 		else if($(".m_fuyu_store").hasClass("active")){
 			$(".m_fuyu_store").stop().fadeOut("fast",function(){
-				$(".m_menu_contain").fadeIn("fast");		
+				$(".m_menu_contain").fadeIn("fast");
+				$(".menu_contain").fadeIn("fast");	
 			});
 			$(".m_fuyu_store").removeClass("active");
+			$(".fuyu_store").removeClass("active");
 			$(".m_menu_contain").addClass("active");
+			$(".menu_contain").addClass("active");
 		}
 		else if($(".m_hours_location").hasClass("active")){
 			$(".m_hours_location").stop().fadeOut("fast",function(){
-				$(".m_menu_contain").fadeIn("fast");		
+				$(".m_menu_contain").fadeIn("fast");
+				$(".menu_contain").fadeIn("fast");	
 			});
 			$(".m_hours_location").removeClass("active");
+			$(".hours_location").removeClass("active");
 			$(".m_menu_contain").addClass("active");
+			$(".menu_contain").addClass("active");
 		}
 	});
 
@@ -223,23 +286,32 @@ $(document).ready(function(){
 		if($("#tablet_contain").hasClass("active")){
 			$("#tablet_contain").stop().fadeOut("fast",function(){
 				$(".m_hours_location").fadeIn("fast");
+				$(".hours_location").fadeIn("fast");
 			});
 			$("#tablet_contain").removeClass("active");
+			$(".photo_gallery").removeClass("active");
 			$(".m_hours_location").addClass("active");
+			$(".hours_location").addClass("active");
 		}
 		else if($(".m_fuyu_store").hasClass("active")){
 			$(".m_fuyu_store").stop().fadeOut("fast",function(){
-				$(".m_hours_location").fadeIn("fast");		
+				$(".m_hours_location").fadeIn("fast");
+				$(".hours_location").fadeIn("fast");		
 			});
 			$(".m_fuyu_store").removeClass("active");
+			$(".fuyu_store").removeClass("active");
 			$(".m_hours_location").addClass("active");
+			$(".hours_location").addClass("active");
 		}
 		else if($(".m_menu_contain").hasClass("active")){
 			$(".m_menu_contain").stop().fadeOut("fast",function(){
-				$(".m_hours_location").fadeIn("fast");		
+				$(".m_hours_location").fadeIn("fast");
+				$(".hours_location").fadeIn("fast");	
 			});
 			$(".m_menu_contain").removeClass("active");
+			$(".menu_contain").removeClass("active");
 			$(".m_hours_location").addClass("active");
+			$(".hours_location").addClass("active");
 		}
 	});
 
