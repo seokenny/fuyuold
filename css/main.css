@@ -44,6 +44,7 @@ ul {
     background-image:url("../images/ramen_shop.jpeg");
     background-repeat:no-repeat;
     background-size:cover;
+    /* z-index:2; */
 }
 
 #right_contain {
@@ -91,6 +92,7 @@ ul {
 /**RIGHT SIDE**/
 #right_contain {
     margin-left:50%;
+    /* z-index:-1; */
 }
 
 .fuyu_name {
@@ -111,6 +113,7 @@ ul {
 .photo_gallery {
     overflow-y:scroll;
     position:relative;
+    z-index:-1;
 }
 
 .black_shroud {
