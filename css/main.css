@@ -60,15 +60,20 @@ ul {
 .logo {
     height:150px;
     width:150px;
+    cursor:pointer;
 }
 
 .nav_bar li {
     margin:35px 0;
-    cursor:pointer;
     letter-spacing:0.3em;
     font-size:0.85em;
     font-family:"Roboto";
     font-weight:bold;
+}
+
+.nav_link {
+    display:inline-block;
+    cursor:pointer;
 }
 
 .social_list {
@@ -148,6 +153,24 @@ ul {
 }
 .pt6 {
     background-image:url("../images/6.jpg");
+}
+.pt7 {
+    background-image:url("../images/7.jpg");
+}
+.pt8 {
+    background-image:url("../images/8.jpg");
+}
+.pt9 {
+    background-image:url("../images/9.jpg");
+}
+.pt10 {
+    background-image:url("../images/10.jpg");
+}
+.pt11 {
+    background-image:url("../images/11.jpg");
+}
+.pt12 {
+    background-image:url("../images/12.jpg");
 }
 
 /**ABOUT**/
@@ -434,6 +457,10 @@ ul {
     font-size:2em;
     font-family:"Roboto";
     font-weight:bold;
+}
+
+.m_nav_bar li {
+    margin:25px 0;
 }
 
 .single_bar {

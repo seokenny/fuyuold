@@ -2,7 +2,11 @@ $(document).ready(function(){
 
 	$(".photo_gallery").addClass("active");
 	$("#tablet_contain").addClass("active");
-    
+	
+	$(".photo_gallery").hover(function(){
+		$(".black_shroud").stop().css("background","unset");
+	});
+
 	$(".nav_home").on("click",function(){
 		if($(".fuyu_store").hasClass("active")){
 			$(".fuyu_store").stop().fadeOut("fast",function(){
