@@ -13,6 +13,7 @@ $(document).ready(function(){
 			$(".m_fuyu_store").removeClass("active");
 			$(".photo_gallery").addClass("active");
 			$("#tablet_contain").addClass("active");
+			changeColorBack();
         }
 		else if($(".menu_contain").hasClass("active")){
             $("#left_contain").stop().animate({width:"50%"},500);
@@ -26,6 +27,7 @@ $(document).ready(function(){
 			$(".m_menu_contain").removeClass("active");
 			$(".photo_gallery").addClass("active");
 			$("#tablet_contain").addClass("active");
+			changeColorBack();
 		}
 		else if($(".hours_location").hasClass("active")){
 			$(".hours_location").stop().fadeOut("fast",function(){
@@ -36,6 +38,7 @@ $(document).ready(function(){
 			$(".m_hours_location").removeClass("active");
 			$(".photo_gallery").addClass("active");
 			$("#tablet_contain").addClass("active");
+			changeColorBack();
 		}
     });
 
@@ -49,6 +52,7 @@ $(document).ready(function(){
 			$("#tablet_contain").removeClass("active");
 			$(".fuyu_store").addClass("active");
 			$(".m_fuyu_store").addClass("active");
+			changeColor();
 		}
 		else if($(".menu_contain").hasClass("active")){
             $("#left_contain").stop().animate({width:"50%"},500);
@@ -62,6 +66,7 @@ $(document).ready(function(){
 			$(".m_menu_contain").removeClass("active");
 			$(".fuyu_store").addClass("active");
 			$(".m_fuyu_store").addClass("active");
+			changeColor();
 		}
 		else if($(".hours_location").hasClass("active")){
 			$(".hours_location").stop().fadeOut("fast",function(){
@@ -72,6 +77,7 @@ $(document).ready(function(){
 			$(".m_hours_location").removeClass("active");
 			$(".fuyu_store").addClass("active");
 			$(".m_fuyu_store").addClass("active");
+			changeColor();
 		}
     });
 
@@ -85,6 +91,7 @@ $(document).ready(function(){
 			$(".m_fuyu_store").removeClass("active");
 			$(".menu_contain").addClass("active");
 			$(".m_menu_contain").addClass("active");
+			changeColor();
 		}
 		else if($(".photo_gallery").hasClass("active")){
 			$(".photo_gallery").stop().fadeOut("fast",function(){
@@ -95,6 +102,7 @@ $(document).ready(function(){
 			$("#tablet_contain").removeClass("active");
 			$(".menu_contain").addClass("active");
 			$(".m_menu_contain").addClass("active");
+			changeColor();
 		}
 		else if($(".hours_location").hasClass("active")){
 			$(".hours_location").stop().fadeOut("fast",function(){
@@ -105,6 +113,7 @@ $(document).ready(function(){
 			$(".m_hours_location").removeClass("active");
 			$(".menu_contain").addClass("active");
 			$(".m_menu_contain").addClass("active");
+			changeColor();
 		}
 	});
 	
@@ -118,6 +127,7 @@ $(document).ready(function(){
 			$(".m_fuyu_store").removeClass("active");
 			$(".hours_location").addClass("active");
 			$(".m_hours_location").addClass("active");
+			changeColor();
 		}
 		else if($(".photo_gallery").hasClass("active")){
 			$(".photo_gallery").stop().fadeOut("fast",function(){
@@ -128,6 +138,7 @@ $(document).ready(function(){
 			$("#tablet_contain").removeClass("active");
 			$(".hours_location").addClass("active");
 			$(".m_hours_location").addClass("active");
+			changeColor();
 		}
 		else if($(".menu_contain").hasClass("active")){
             $("#left_contain").stop().animate({width:"50%"},500);
@@ -141,6 +152,7 @@ $(document).ready(function(){
 			$(".m_menu_contain").removeClass("active");
 			$(".hours_location").addClass("active");
 			$(".m_hours_location").addClass("active");
+			changeColor();
 		}
 
     });
@@ -308,7 +320,15 @@ $(document).ready(function(){
 		}
 	});
 
+
 });
+function changeColor(){
+		$(".single_bar").css('background','black');
+}
+
+function changeColorBack(){
+	$(".single_bar").css('background', 'white');
+}
 
 $(".nav_menu").on("click",function(){
 	$("#left_contain").stop().animate({width:"25%"},500);
@@ -316,11 +336,10 @@ $(".nav_menu").on("click",function(){
 	$("#right_contain").stop().animate({marginLeft:"25%",width:"75%"},500);
 });
 
-
 $(window).resize(function() {
 	var width = $(window).width();
-    if (width <= 768) {
-	    if($(".fuyu_store").hasClass("active") || $(".menu_contain").hasClass("active") || $(".hours_location").hasClass("active")){
+		if (width <= 768) {
+			if($(".fuyu_store").hasClass("active") || $(".menu_contain").hasClass("active") || $(".hours_location").hasClass("active")){
 			$("#right_contain").stop().animate({marginLeft:"0%",width:"100%"},500);
 			$("#left_contain").fadeOut("fast");
 		}
@@ -345,4 +364,4 @@ $(window).resize(function() {
 			});
 		}
 	}
-});
+});	

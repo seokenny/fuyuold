@@ -402,7 +402,6 @@ ul {
     position:fixed;
     z-index:80000;
     width:100%;
-    text-align:right;
 }
 
 .burger_button {
@@ -418,15 +417,29 @@ ul {
 .mobile_nav {
     height:100vh;
     width:100%;
-    background-color:black;
+    background-image:url("../images/japwavedim.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
     position:fixed;
     z-index:90000;
 }
 
+.single_bar_container {
+    position:absolute;
+    right:5px;
+}
+
 .m_nav_bar {
-    color:white;
+    color:black;
     cursor:pointer;
     font-size:2em;
     font-family:"Roboto";
     font-weight:bold;
+}
+
+.single_bar {
+    height:3px;
+    width:27px;
+    background-color:white;
+    margin:5px 0;
 }

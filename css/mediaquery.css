@@ -23,6 +23,9 @@
     #mobile_full {
         display:block;
     }
+    #left_contain {
+        width:100%;
+    }
     /**TABLET QUERY**/
     .nav_bar {
         display:none;
@@ -51,6 +54,13 @@
         margin-left:10%;
     }
 }
+
+@media only screen and (max-width:520px){
+    .l_item {
+        width:100%;
+    }
+}
+
 
 @media only screen and (max-width:475px){
     .half_box {
